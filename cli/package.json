@@ -1,7 +1,7 @@
 {
   "name": "@tron-paymaster/cli",
   "version": "0.1.0",
-  "description": "Command-line tool and reference relayer for TronPaymaster.",
+  "description": "Command-line tool for TronPaymaster: deploy and govern a factory, derive addresses, move funds, claim fees.",
   "license": "Apache-2.0",
   "type": "module",
   "main": "./dist/index.js",

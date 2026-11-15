@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "license": "Apache-2.0",
+  "description": "TronPaymaster contracts: the permit account, its factory, deposit forwarders and the upgrade router.",
   "type": "module",
   "scripts": {
     "build": "forge build && node script/compile-tron.mjs && node script/export-artifacts.mjs",
     "build:tron": "node script/compile-tron.mjs && node script/export-artifacts.mjs",
-    "test": "forge test",
-    "chain-params": "node script/chain-params-check.mjs"
+    "test": "forge test"
   },
   "devDependencies": {
     "solc": "0.8.26"

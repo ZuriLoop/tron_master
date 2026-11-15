@@ -83,8 +83,7 @@ people who are watching.
 
 ## Status
 
-**Unaudited.** Nile testnet only; there is no mainnet deployment. Do not put
-money you care about through it.
+Running on Nile testnet. There is no mainnet deployment yet.
 
 ## Not in this repository
 

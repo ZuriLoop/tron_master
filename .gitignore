@@ -32,3 +32,6 @@ out-tron
 
 # relayer state (submissions, spend)
 .tron-paymaster/
+
+# e2e run artifacts
+cli/test/results/
