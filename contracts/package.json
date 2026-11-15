@@ -1,0 +1,16 @@
+{
+  "name": "@tron-paymaster/contracts",
+  "version": "0.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "build": "forge build && node script/compile-tron.mjs && node script/export-artifacts.mjs",
+    "build:tron": "node script/compile-tron.mjs && node script/export-artifacts.mjs",
+    "test": "forge test",
+    "chain-params": "node script/chain-params-check.mjs"
+  },
+  "devDependencies": {
+    "solc": "0.8.26"
+  }
+}

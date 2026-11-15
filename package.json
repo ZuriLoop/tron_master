@@ -1,0 +1,13 @@
+{
+  "name": "tron_master",
+  "private": true,
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "pnpm --filter @tron-paymaster/contracts build && pnpm --filter @tron-paymaster/sdk build && pnpm --filter @tron-paymaster/cli build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  }
+}

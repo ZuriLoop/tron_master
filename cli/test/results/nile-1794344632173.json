@@ -1,0 +1,79 @@
+{
+  "network": "nile",
+  "factory": "TSmQ19QbcLBr9PiYt4XiqePCFpn5jep6n4",
+  "at": "2026-11-10T21:05:43.357Z",
+  "usdt": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+  "measurements": [
+    {
+      "op": "deployFactory",
+      "txid": "08ac4be34f3f7b0a0859368632e9befc7e7ac2f75e53d476b7321d56072bc9f1",
+      "energy": 5515848,
+      "energyFee": 551584800,
+      "netFee": 32914000,
+      "feeSun": 584498800
+    },
+    {
+      "op": "usdtTransfer(newHolder)",
+      "txid": "edfd0c67c292fe03945ac95a0ae9c02ed3b0117d4fff9f50f51b0648dac8b531",
+      "energy": 29650,
+      "netUsage": 345,
+      "originEnergy": 29650
+    },
+    {
+      "op": "forwarder.deployAndSweep",
+      "txid": "044fa9043a9507e822703a317376996048629d642090665ca9a336ba42b5c8a7",
+      "energy": 76552,
+      "energyFee": 7655200,
+      "netFee": 411000,
+      "feeSun": 8066200
+    },
+    {
+      "op": "forwarder.sweep(deployed)",
+      "txid": "8f31174f07cfe6084af40850cf6e52deea7615e9a02167887371d936950a929c",
+      "energy": 24249,
+      "energyFee": 2424900,
+      "netFee": 411000,
+      "feeSun": 2835900
+    },
+    {
+      "op": "forwarder.deployAndSweepTRX",
+      "txid": "8e96b12b7768eb5832cc9bba03143cc7d24dedb0c4d4ae1ef3bffd07263066d5",
+      "energy": 64424,
+      "energyFee": 6442400,
+      "netFee": 411000,
+      "feeSun": 6853400
+    },
+    {
+      "op": "account.deployAndPermit(newRecipient)",
+      "txid": "b32ee8dffbebb55510376271408ffa895ba55eb15686dadd254bd2e8a53a402a",
+      "energy": 162178,
+      "energyFee": 16217800,
+      "netFee": 731000,
+      "feeSun": 16948800
+    },
+    {
+      "op": "account.permitTransfer(holder)",
+      "txid": "0190bb487a6bcd1f5edfe98e4097d0447944ac8e26c095af06765f95ad83b602",
+      "energy": 51185,
+      "energyFee": 5118500,
+      "netFee": 667000,
+      "feeSun": 5785500
+    },
+    {
+      "op": "claimMany(1)",
+      "txid": "76f0ad04aa91e0c6e720927b0cec437b25bfb50a8caab3d02648a0a6b0f809ed",
+      "energy": 34764,
+      "energyFee": 3476400,
+      "netFee": 443000,
+      "feeSun": 3919400
+    },
+    {
+      "op": "account.withdraw",
+      "txid": "8300547e06f49ffa597204b1583ae78f2509405c5d4d0b4144d6f4a5a6d6c3d3",
+      "energy": 23708,
+      "energyFee": 2370800,
+      "netUsage": 378,
+      "feeSun": 2370800
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "network": "nile",
+  "factory": "TXJM4bnA5dmWxzn2sZMQoBaAL6FcAyjVLa",
+  "forwarderRouter": "TFoC8LkN7VmxVk5SpWTsZNeSarHMxVLyVy",
+  "accountRouter": "TYas9bbMjoAsgEYgL7tJpbEBccCuyurx7t",
+  "admin": "TBtLWd5sjSjrzZfmhYoyjxLAYgApx97gTv",
+  "guardian": "TFrTdMJguRi1q6JcKAfgc7uuXLpHkEfAxx",
+  "feeToken": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+  "deployTx": "d724c79b9d5dbcf5b5ad7f4b1f77851a8d679f52065963a9c254275245b04fc1",
+  "deployedAt": "2026-11-14T17:41:00.000Z"
+}

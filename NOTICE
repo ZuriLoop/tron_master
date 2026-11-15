@@ -1,0 +1,9 @@
+TronPaymaster
+Copyright 2026 The TronPaymaster Authors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product includes software from OpenZeppelin Contracts for Tron
+(https://github.com/OpenZeppelin/tron-contracts), Copyright (c) OpenZeppelin,
+licensed under the MIT License. The vendored files are in
+contracts/lib/oz-tron/ and are unmodified.

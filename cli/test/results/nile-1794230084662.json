@@ -1,0 +1,71 @@
+{
+  "network": "nile",
+  "factory": "TEZgEJXDosFmTPMUgHpT3bv1J1dXhGLqtp",
+  "at": "2026-11-09T13:16:42.105Z",
+  "usdt": "TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf",
+  "measurements": [
+    {
+      "op": "usdtTransfer(newHolder)",
+      "txid": "2cd25640e56a7d0edcf90e584fb640d59beebb36ea1ba63a8823a74d42318a04",
+      "energy": 29650,
+      "netUsage": 345,
+      "originEnergy": 29650
+    },
+    {
+      "op": "forwarder.deployAndSweep",
+      "txid": "762154f4f567170445e12bc8e60ec8c490a9cd00c781ea5f9355573c52c383ec",
+      "energy": 76561,
+      "energyFee": 7656100,
+      "netFee": 411000,
+      "feeSun": 8067100
+    },
+    {
+      "op": "forwarder.sweep(deployed)",
+      "txid": "57629d412d0e0436b924e5743975ec419b6eeb6b98723f767d74839b33b8a8dd",
+      "energy": 24258,
+      "energyFee": 2425800,
+      "netFee": 411000,
+      "feeSun": 2836800
+    },
+    {
+      "op": "forwarder.deployAndSweepTRX",
+      "txid": "54cbd23a7c7449bf3f524373b44639cfe222aa166c7395ecd047b497c538b52d",
+      "energy": 64388,
+      "energyFee": 6438800,
+      "netFee": 411000,
+      "feeSun": 6849800
+    },
+    {
+      "op": "account.deployAndPermit(newRecipient)",
+      "txid": "180f41df7cd9499af5a9098b70f305fd42c81278fce77ff6b3071f1b482cd926",
+      "energy": 162063,
+      "energyFee": 16206300,
+      "netFee": 731000,
+      "feeSun": 16937300
+    },
+    {
+      "op": "account.permitTransfer(holder)",
+      "txid": "abc3a6435679f3775d7a0f8363afe2fdf8140f64652a29f79ce998279f2ea6f6",
+      "energy": 51070,
+      "energyFee": 5107000,
+      "netFee": 667000,
+      "feeSun": 5774000
+    },
+    {
+      "op": "claimMany(1)",
+      "txid": "c54bf04c3bcc1a7a93900e855fc862892dcedc0b544d6008d61165d661b1116b",
+      "energy": 34752,
+      "energyFee": 3475200,
+      "netFee": 443000,
+      "feeSun": 3918200
+    },
+    {
+      "op": "account.withdraw",
+      "txid": "265c35c9ac32db2e3622696988a4f1b1e3280714298c8a3041cf25684ea49ae1",
+      "energy": 23718,
+      "energyFee": 2371800,
+      "netUsage": 378,
+      "feeSun": 2371800
+    }
+  ]
+}
