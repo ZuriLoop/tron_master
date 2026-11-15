@@ -1,0 +1,60 @@
+# Build and test everything on every push and pull request.
+#
+# Two jobs because they share nothing: the contracts build with Foundry and
+# need the forge-std submodule, while the TypeScript packages need pnpm and a
+# built SDK. Keeping them apart means a Solidity failure does not hide a
+# TypeScript one, and both report independently.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          submodules: recursive
+      - uses: foundry-rs/foundry-toolchain@dba66c27052e63476d886f22216e119ba7e615bf # v1.9.2
+      - run: forge build
+        working-directory: contracts
+      # Unit, fuzz and invariants. The fuzz and invariant runs are where this
+      # job earns its time: they are the tests a person would not think to
+      # write, and they are why the run is minutes rather than seconds.
+      - run: forge test -vv
+        working-directory: contracts
+
+  packages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [20, 22, 24]
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: pnpm/action-setup@a15d269cd4658e1107c09f1fabf4cbd7bd1f308a # v4.4.0
+        with:
+          version: 10
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: ${{ matrix.node }}
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm --filter @tron-paymaster/sdk typecheck
+      - run: pnpm --filter @tron-paymaster/sdk test
+      # The CLI consumes the SDK's build output, so this ordering is load
+      # bearing rather than tidy.
+      - run: pnpm --filter @tron-paymaster/sdk build
+
+      - run: pnpm --filter @tron-paymaster/cli typecheck
+      - run: pnpm --filter @tron-paymaster/cli test
+      - run: pnpm --filter @tron-paymaster/cli build
