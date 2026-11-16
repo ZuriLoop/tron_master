@@ -38,6 +38,7 @@ on Tron without any Tron-specific signing code.
 | [`contracts/`](contracts) | The protocol: `PaymasterFactory`, `PermitAccount`, `DepositForwarder`, `ImplementationRouter`. Foundry tests, fuzz and invariants. |
 | [`sdk/`](sdk) | Address derivation, permit construction and signing, the relayer client. No dependencies but `viem`. |
 | [`cli/`](cli) | Deploy a factory, govern it, derive addresses, move funds, claim fees. |
+| [`docs/`](docs) | How it works, the permit specification, governance, the threat model, and integration guides. |
 
 ## Build and test
 
