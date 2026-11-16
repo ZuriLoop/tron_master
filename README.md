@@ -81,9 +81,6 @@ ceiling set in the constructor that no later change can exceed.
 alerts on anything queued, executed or cancelled. A timelock only protects
 people who are watching.
 
-## Status
-
-Running on Nile testnet. There is no mainnet deployment yet.
 
 ## Not in this repository
 
